@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Add-on: Telegram Replicator
+# Szolgáltatás leállítási logika
+# ==============================================================================
+
+bashio::log.info "A Telegram Replicator addon leállítása..."
+
+# Szükség esetén ide további tisztítási lépések kerülhetnek
+
+# 0 exit kóddal zárjuk a konténer újraindításához, 
+# vagy nem nullás értékkel a leállításhoz
+exit 0 
