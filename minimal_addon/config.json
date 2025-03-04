@@ -1,0 +1,21 @@
+{
+  "name": "Minimal Telegram",
+  "version": "1.0.0",
+  "slug": "minimal_telegram",
+  "description": "Minimális Telegram üzenet másoló",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "api_id": 0,
+    "api_hash": "",
+    "source_channel": "",
+    "target_channel": ""
+  },
+  "schema": {
+    "api_id": "int",
+    "api_hash": "str",
+    "source_channel": "str",
+    "target_channel": "str"
+  }
+} 

@@ -10,14 +10,14 @@
   "init": false,
   "panel_icon": "mdi:telegram",
   "options": {
-    "api_id": 0,
+    "api_id": "",
     "api_hash": "",
     "source_channel": "",
     "target_channel": "",
     "phone_number": "+36"
   },
   "schema": {
-    "api_id": "int",
+    "api_id": "str",
     "api_hash": "str",
     "source_channel": "str",
     "target_channel": "str",
