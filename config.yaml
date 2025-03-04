@@ -1,0 +1,26 @@
+name: "Telegram Replicator"
+version: "1.0.0"
+slug: "telegram_replicator"
+description: "Telegram üzenetek automatikus másolása egyik csatornából a másikba"
+url: "https://github.com/yourusername/hassio-telegram-replicator"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: application
+init: false
+panel_icon: mdi:telegram
+options:
+  api_id: ""
+  api_hash: ""
+  source_channel: ""
+  target_channel: ""
+  phone_number: "+36"
+schema:
+  api_id: str
+  api_hash: str
+  source_channel: str
+  target_channel: str
+  phone_number: str 

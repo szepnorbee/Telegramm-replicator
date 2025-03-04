@@ -1,0 +1,17 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Add-on: Telegram Replicator
+# A szolgáltatás indítása és a Telegram Replicator futtatása
+# ==============================================================================
+
+# Futtassa a scriptet a python interpreter segítségével
+bashio::log.info "Telegram Replicator addon indítása..."
+
+# Futtassa a kezdeti állapotot jelző üzenetet
+bashio::log.info "A szolgáltatás a következő paraméterekkel indul:" 
+bashio::log.info "API ID: $(bashio::config 'api_id')"
+bashio::log.info "Source Channel: $(bashio::config 'source_channel')"
+bashio::log.info "Target Channel: $(bashio::config 'target_channel')"
+
+# Indítsa el a főprogramot
+python3 /app/telegram_replicator.py 
